@@ -1,0 +1,23 @@
+<?php
+
+// IMPORTANT NOTE: in a production application, the partner ID and Kaltura Admin Secret should never
+// be exposed on the client side of an application. It is done here for simplicity only.
+
+// https://kmc.kaltura.com/index.php/kmcng/settings/integrationSettings
+define('PARTNER_ID', INSERT_PROPER_VALUE);
+
+// https://kmc.kaltura.com/index.php/kmcng/settings/integrationSettings
+define('API_ADMIN_SECRET', 'INSERT_PROPER_VALUE');
+
+// Make sure this is set to real user IDs so that Analytics and Entitlements will really be tracked according to business needs
+define('ADMIN_USER_ID',     'admin@webcaster.com'); //Admin user ID to create admin KS
+define('PRESENTER_USER_ID', 'presenter@webcaster.com'); //User ID to create LiveStream entry and to join the room as a presenter
+define('RESOURCE_ID', INSERT_PROPER_VALUE); //Refer to https://github.com/kaltura-vpaas/virtual-meeting-rooms on how to create a schedule resource
+define('V7_PLAYER_UI_CONF', INSERT_PROPER_VALUE);  //Refer to Player ID from KMC https://kmc.kaltura.com/index.php/kmcng/studio/v3 
+define('LIVESTREAM_ENTRY_ID', '');  //Get the LiveStream entry ID that you want to webcast to from KMC https://kmc.kaltura.com/index.php/kmcng/content/entries/list 
+                                    //If left blank, a new LiveStream entry will be created
+
+// Set KS expiry to one day
+define('KS_EXPIRY', 60*60*24);
+
+?>

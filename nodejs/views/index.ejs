@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h1>
+    <%= title %>
+  </h1>
+  <form target="_blank" method="POST" action="/">
+    <label for="firstName">First Name <input type="text" name="firstName"></label>
+
+    <br>
+    <label for="lastName">Last Name <input type="text" name="lastName"></label>
+    <br>
+    <label for="email">Email <input type="text" name="email"></label>
+    <br>
+    <input type="submit">
+  </form>
+
+  <h2>Viewer</h2>
+  <div id="my_player" style="width: 1100px;height: 700px;margin: auto"></div>
+  <script type="text/javascript" 
+  src="https://cdnapisec.kaltura.com/p/3033241/embedPlaykitJs/uiconf_id/46516743"></script>
+  <script>
+    
+    var kalturaPlayer;
+
+    try {
+      kalturaPlayer = KalturaPlayer.setup({
+        targetId: "my_player",
+        provider: {
+          partnerId: 3033241,
+          uiConfId: 48766353
+        },
+        playback: {
+          autoplay: true
+        }
+      });
+      kalturaPlayer.loadMedia({entryId: '<%=liveId%>'});
+    } catch (e) {
+      console.error(e.message)
+    }
+    
+  </script>
+</body>
+
+</html>

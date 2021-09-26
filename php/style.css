@@ -1,0 +1,26 @@
+body {
+    font-family: 'robotolight', 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+    text-align:   center;
+    font-weight:  300;
+}
+
+.launch {
+    font-size:       14px;
+    text-align:      center;
+    text-decoration: none;
+    display:         inline-block;
+    padding:         14px 0px 14px 0px;
+    margin-bottom:   10px;
+    width:           200px;
+    border-radius:   5px;
+  background-color: #fc9003;
+    color:            white;
+  -webkit-appearance: none;
+}
+
+.divider { color: #83C36D }
+
+h1 { font-weight: 300; }
+h2 { font-weight: 300; }
+h3 { font-weight: 300; }
+h4 { font-weight: 300; }
