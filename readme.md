@@ -4,7 +4,6 @@ This app highlights how one broadcast the contents of a Kaltura Meetings Experie
 
 ### Prerequisites
 
-1. [Nodejs](https://nodejs.org/en/) 
 2. [Kaltura VPaaS account](https://corp.kaltura.com/video-paas/registration?utm_campaign=Meetabout&utm_medium=affiliates&utm_source=GitHub). Once you've opened an account, send an email to <VPaaS@kaltura.com> to activate Meetings.
 3. Kaltura account configured with both KAF and KME modules enabled
 
